@@ -4,19 +4,9 @@
 }
 
 body {
-    /* background-image: linear-gradient(150deg, rgb(164, 246, 252), rgb(243, 156, 255), rgb(164, 246, 252)); */
-    /* background-image: linear-gradient(150deg, rgb(164, 246, 252), rgb(243, 156, 255), rgb(164, 246, 252) ) url(/); */
-    /* background-image:  url(assets/img/bag.png); */
-   background-image: url(assets/img/bag.png);
+    background-image: linear-gradient(150deg, rgb(164, 246, 252), rgb(243, 156, 255), rgb(164, 246, 252));
 }
-.navbar-nav a{
 
-    color: orangered;
-}
-.nav-link{
-    font-weight: bold;
-    font-size: 17px;
-}
 .greeting {
     font-size: 30px;
     text-align: center;
@@ -71,11 +61,19 @@ body {
     padding-top: 0.3rem !important;
 }
 
-.overlay {
+/* .overlay {
     background: rgba(0, 0, 0, 0.00);
-    position: absolute;
+    width: 100%;
+    position: relative;
     top: 0;
     right: 0;
+} */
+
+
+ .navbar-brand {
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 @media (min-width:950px) {
@@ -122,8 +120,7 @@ body {
 
 @media(min-width:950px) {
     .navbar-nav a:hover {
-        background-color: orangered;
-        ;
+        background-color: #D2691E;
         border: 1px;
         border-radius: 55px;
         padding: 5px 25px 5px 25px !important;
@@ -135,10 +132,12 @@ body {
 }
 
 
+
+
+
 /* navigation  */
 
 .top-sec-1 {
-    margin-top: -60px;
     height: 59rem;
     width: 100%;
 }
@@ -167,7 +166,6 @@ body {
 }
 
 .heading {
-    margin-top: -10px;
     display: flex;
     justify-content: left;
     padding: 0% 0% 1% 10%;
@@ -178,16 +176,15 @@ body {
     width: auto;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 20px;
-    /* text-overflow: ellipsis; */
+    text-overflow: ellipsis;
     text-decoration: none;
 }
 
-/* .top-para:hover {
+.top-para:hover {
     overflow: visible;
     white-space: pre-line;
     text-decoration: none;
-} */
+}
 
 @media(max-width: 700px) {
     .top-para {
@@ -227,14 +224,6 @@ h1 {
     h1 {
         font-size: 1.0em;
     }
-}
-
-.top-btn{
-    font-size: 20px;
-    border: 2px solid orangered;
-    border-radius: 30px;
-    background-color: orangered;
-    color: #fff;
 }
 
 
@@ -413,19 +402,19 @@ h1 {
 }
 
 .task-detail button {
-    border: 1px solid orangered;
+    border: 1px solid #D2691E;
     border-radius: 20px;
     padding: 3px 40px 3px 40px;
-    background-color: orangered;
+    background-color: #D2691E;
     margin-left: 34px;
     margin-top: 15px;
 }
 
 .task-detail button:hover {
-    border: 1px solid orangered;
+    border: 1px solid #d65b03;
     border-radius: 20px;
     padding: 4px 41px 4px 41px;
-    background-color: orangered;
+    background-color: #d65b03;
     margin-left: 34px;
     margin-top: 15px;
 }
@@ -483,7 +472,7 @@ h1 {
     font-size: 3.5rem;
     font-weight: 700;
     padding: 3% 0% 0%;
-    color: orangered;
+    color: #D2691E;
     text-align: center;
 }
 
@@ -609,10 +598,10 @@ h1 {
 
 /* Add a hover effect if you want */
 
-/* .fa:hover {
+.fa:hover {
     opacity: 0.9;
     background-color: rgb(251, 255, 0);
-} */
+}
 
 
 /* Set a specific color for each brand */
@@ -996,7 +985,7 @@ h1 {
     font-size: 3.5rem;
     font-weight: 700;
     padding: 2% 2% 0%;
-    color: orangered;
+    color: #D2691E;
 }
 
 .btncolor:hover {
@@ -1010,7 +999,7 @@ h1 {
 }
 
 .btncolor {
-    background-color: orangered;
+    background-color: #D2691E;
     color: #fff;
     font-weight: 600;
     font-size: larger;
@@ -1120,14 +1109,13 @@ h1 {
     width: 90%;
     text-align: center;
     margin: 5rem auto;
-    border: 2px solid  linear-gradient(150deg,  rgb(164, 246, 252),rgb(243, 156, 255) , rgb(164, 246, 252));;
+    border: 2px solid white;
     border-radius: 3rem;
     padding: 2rem;
-    background-image: linear-gradient(150deg,  rgb(164, 246, 252),rgb(243, 156, 255) , rgb(164, 246, 252));
 }
 
 #newsLetter h3 {
-    color: orangered;
+    color: #d86716;
     font-size: 2rem;
     margin-bottom: 0;
 }
@@ -1208,7 +1196,7 @@ ul {
 
 h3 {
     font-weight: 600;
-    color: rgb(9, 9, 122);
+    color: blue;
     margin-bottom: 20px;
 }
 
@@ -1260,3 +1248,25 @@ h3 {
     text-decoration: none;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
