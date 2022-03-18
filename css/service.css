@@ -151,218 +151,69 @@
 
 
 **********************************************
-
-
-.service-inner {
-    width: 20%;
-    height: 300px;
-    padding: 20px;
-    margin: 5px;
-    border: 2px solid rgba(255, 196, 0, 0.7) !important;
-    border-radius: 8px;
-    background-color: rgba(255, 217, 0, 0.74) !important;
-}
-
-@media(max-width:550px) {
-    .service-inner {
-        flex-direction: row;
-        flex-basis: 100%;
-        width: fit-content;
-        height: 300px;
-        padding: 20px;
-        margin: 5px;
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        border-radius: 8px;
-        background-color: rgba(255, 255, 255, 0.6);
-    }
-}
-
-@media(min-width:550px) and (max-width:1024px) {
-    .service-inner {
-        flex-direction: row;
-        flex-basis: 40%;
-        width: fit-content;
-        height: 300px;
-        padding: 20px;
-        margin: 1.5rem;
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        border-radius: 8px;
-        background-color: rgba(255, 255, 255, 0.6);
-    }
-}
-
-.service-inner:hover {
-    border: 2px solid rgba(0, 179, 170, 0.9);
-    border-radius: 8px;
-    background-color: rgba(0, 143, 161, 0.9);
-    color: rgb(255, 255, 255);
-}
-
-.service-inner ul {
-    padding: 0px;
-}
-
-.ads {
-    padding: 3px;
-}
-
-.service-inner ul button {
-    padding: 2px 15px;
-    margin: 8px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 15px;
-    box-shadow: 0 0 3px rgb(0, 0, 0, 0.3);
-    color: black;
-}
-
-.service-inner ul button:hover {
-    padding: 2px 15px;
-    margin: 8px;
-    background-color: rgb(13, 1, 122);
-    border: 2px solid rgb(13, 1, 122);
-    border-radius: 15px;
-    box-shadow: 0 0 3px rgb(13, 1, 122);
-    color: white;
-}
-
-.planName {
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-}
-
-@media(max-width:550px) {
-    .planName {
-        display: hidden;
-        visibility: collapse;
-        visibility: hidden;
-    }
-}
-
-.planName ul {
-    padding: 2px 25px;
-    font-weight: bolder;
-}
-
-
-/* service discription */
-
-.serviceDis {
+.serviceDis{
     width: 100%;
-    height: auto;
 }
 
-@media(min-width:550px) and (max-width:1280px) {
-    .serviceDis {
-        display: none;
-        visibility: collapse;
-        height: 0px;
-        width: 0px;
-    }
-}
-
-.serviceCon {
+.serviceCon{
+    width: 80%;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
-    width: 84%;
-    margin-bottom: 5%;
-    /* margin-right: 6%; */
+    margin-left: 10%;
+    margin-top: 2%;
 }
 
-@media(max-width:550px) {
-    .serviceCon {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100% !important;
-        margin-bottom: 5%;
-    }
-}
-
-.serviceTile {
-    width: 50%;
-    height: auto;
-}
-
-@media(max-width:550px) {
-    .serviceTile {
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        flex-basis: 100%;
-    }
-}
-
-.serviceCont {
-    width: 50%;
-    height: auto;
-    margin-top: 3rem;
-}
-
-@media(max-width:550px) {
-    .serviceCont {
-        width: 80%;
-    }
-    .serviceCont h5 {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-        margin-bottom: 25px;
-    }
-    .serviceCont p {
-        text-align: center;
-        font-size: 17px;
-        font-weight: 400;
-        margin-bottom: 20px;
-    }
-}
-
-.conMargin {
-    margin-left: 20%;
-}
-
-@media(max-width:550px) {
-    .conMargin {
-        margin-left: 0px;
-    }
-}
-
-#conMargin {
-    margin-left: 20%;
-}
-
-@media(max-width:550px) {
-    #conMargin {
-        margin-left: 0px;
-    }
-}
-
-.service-inner {
-    width: 50%;
-    text-align: center;
-}
-
-.right {
-    margin-right: 5%;
-    margin-top: 2rem;
-}
-
-.left {
+.serviceCont,
+.service-inner{
+    width: 30%;
     margin-left: 5%;
-    margin-top: 2rem;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    flex-basis: 100%;
+    justify-content: center;
 }
 
-@media(max-width:550px) {
-    #itemAling {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #itemAling ul {
-        text-align: center;
-    }
+.service-inner ul{
+    text-align: center;
+    padding: 0%;
+    margin: 20px;
 }
+
+ul > li{
+    margin-top: 1px;
+}
+
+ul > button{
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    padding: 2px 15px;
+    margin-top: 20px;
+}
+ul > button:hover{
+    background-color: rgb(60, 255, 0);
+    border: 2px solid rgb(0, 255, 34);
+    border-radius: 15px;
+    padding: 2px 15px;
+    margin-top: 20px;
+}
+
+.right,.left{
+    background-color: yellow;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px #000;
+    box-sizing: border-box;
+}
+
+.right:hover,.left:hover{
+    background-color: rgb(0, 141, 177);
+    border: 1px solid rgb(0, 140, 165);
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px #000;
+    box-sizing: border-box;
+}
+
 
 
 /* service discription */
